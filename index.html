@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#15172b">
+  <meta name="description" content="NOVA LAB: um laboratório interativo para transformar curiosidade em ideias. Explore o Oráculo, crie projetos e mude a atmosfera.">
+  <title>NOVA LAB — Ideias em movimento</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a href="#inicio" class="brand" aria-label="NOVA LAB, voltar ao início"><span class="brand-icon" aria-hidden="true">✳</span>NOVA<span>/</span>LAB</a>
+      <nav aria-label="Navegação principal"><a href="#experimentos">Experimentos</a><a href="#estudio">Estúdio</a><a href="#sobre">Sobre</a></nav>
+      <button type="button" class="terminal-trigger" id="terminalBtn" aria-label="Abrir terminal, atalho Control mais K">⌘ <span>Terminal</span> <kbd>Ctrl K</kbd></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" id="inicio" aria-labelledby="heroTitle">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="signal" aria-hidden="true"></span> LABORATÓRIO DIGITAL <span class="divider"></span> EXP. 001</p>
+        <h1 id="heroTitle">O futuro<br>começa com<br><em>uma ideia<span>.</span></em></h1>
+        <p class="hero-description">Um espaço para perguntar, experimentar e criar. Escolha um módulo e veja até onde a sua curiosidade pode chegar.</p>
+        <div class="hero-actions"><a class="button primary" href="#experimentos">Explorar o laboratório <span aria-hidden="true">↗</span></a><button class="button secondary" type="button" id="surpriseBtn">Surpreenda-me <span aria-hidden="true">✳</span></button></div>
+        <p class="hero-note"><span></span> IMAGINAÇÃO EM ESTADO ATIVO</p>
+      </div>
+      <div class="hero-art" role="img" aria-label="Ilustração abstrata de um núcleo criativo em movimento">
+        <div class="art-grid"></div><div class="art-head"><span>FIG. 01 / NÚCLEO CRIATIVO</span><span>＋</span></div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+        <div class="orb"><span>n</span><i>✳</i></div><span class="satellite one"></span><span class="satellite two"></span>
+        <div class="art-label top">IDEIA<br><b>→ AÇÃO</b></div><div class="art-label bottom">∞ <small>POSSIBILIDADES</small></div>
+        <div class="art-foot"><span>01 — EXPLORE O INESPERADO</span><span>● ONLINE</span></div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true"><div>CURIOSIDADE É O PONTO DE PARTIDA <span>✳</span> CRIE O QUE AINDA NÃO EXISTE <span>✳</span> CURIOSIDADE É O PONTO DE PARTIDA <span>✳</span> CRIE O QUE AINDA NÃO EXISTE <span>✳</span></div></div>
+
+    <section class="experiments shell" id="experimentos" aria-labelledby="experimentsTitle">
+      <div class="section-heading"><div><p class="kicker">01 / EXPLORE</p><h2 id="experimentsTitle">Escolha sua<br><em>próxima descoberta.</em></h2></div><p>Três caminhos para começar.<br>Qual deles combina com você hoje?</p></div>
+      <div class="card-grid">
+        <button class="card card-oracle" type="button" data-action="oracle" aria-controls="estudio">
+          <span class="card-top">01 / PERGUNTE <span aria-hidden="true">↗</span></span>
+          <span class="card-art oracle-art" aria-hidden="true"><span>?</span><i></i><i></i></span>
+          <span class="card-body"><span class="card-kicker">EXP. 001 — REFLEXÃO</span><strong>Oráculo</strong><span class="card-desc">Uma pergunta pode abrir um caminho inesperado.</span><span class="card-link">FAZER UMA PERGUNTA <span aria-hidden="true">→</span></span></span>
+        </button>
+        <button class="card card-idea" type="button" data-action="idea" aria-controls="estudio">
+          <span class="card-top">02 / INVENTE <span aria-hidden="true">↗</span></span>
+          <span class="card-art idea-art" aria-hidden="true"><span>✳</span><i>IDEA<br>ENGINE</i></span>
+          <span class="card-body"><span class="card-kicker">EXP. 002 — CRIAÇÃO</span><strong>Idea Engine</strong><span class="card-desc">Combine tecnologia e propósito para criar algo novo.</span><span class="card-link">GERAR UMA IDEIA <span aria-hidden="true">→</span></span></span>
+        </button>
+        <button class="card card-mode" type="button" data-action="creative" aria-controls="estudio" aria-pressed="false">
+          <span class="card-top">03 / TRANSFORME <span aria-hidden="true">↗</span></span>
+          <span class="card-art mode-art" aria-hidden="true"><span class="mode-disc"></span><span class="spark">✦</span></span>
+          <span class="card-body"><span class="card-kicker">EXP. 003 — ATMOSFERA</span><strong>Creative Mode</strong><span class="card-desc">Mude as cores. Enxergue o mesmo mundo de outro jeito.</span><span class="card-link" id="modeCardLabel">ATIVAR NOVO MODO <span aria-hidden="true">→</span></span></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="studio-section" id="estudio" aria-labelledby="studioTitle">
+      <div class="studio shell">
+        <div class="studio-copy"><p class="kicker">02 / EXPERIMENTE</p><h2 id="studioTitle">Seu próximo<br><em>ponto de partida.</em></h2><p>O laboratório ganha vida aqui. Selecione um experimento, participe e leve uma ideia adiante.</p><span class="studio-star" aria-hidden="true">✳</span></div>
+        <div class="workspace">
+          <div class="workspace-head"><span><i></i> ÁREA DE EXPERIMENTO</span><span id="workspaceMode">AGUARDANDO ENTRADA</span></div>
+          <div class="workspace-content" aria-live="polite">
+            <div id="placeholder"><span class="placeholder-icon" aria-hidden="true">↗</span><p class="workspace-kicker">PRONTO PARA COMEÇAR</p><h3>Grandes ideias começam pequenas.</h3><p>Escolha um dos módulos acima para dar o primeiro passo.</p></div>
+            <div class="panel" id="oraclePanel" hidden>
+              <p class="workspace-kicker">MÓDULO 01 / ORÁCULO</p><h3>O que você quer descobrir?</h3><p>Escreva uma pergunta e receba um convite para pensar diferente.</p>
+              <form id="oracleForm"><label for="question">SUA PERGUNTA</label><div class="input-row"><input id="question" type="text" minlength="3" maxlength="180" placeholder="E se eu tentasse algo novo?" required autocomplete="off"><button type="submit" aria-label="Enviar pergunta">↗</button></div></form>
+              <div class="result" id="oracleResult" hidden><span>RESPOSTA DO ORÁCULO</span><strong id="oracleAnswer"></strong><p id="oracleQuestion"></p></div>
+            </div>
+            <div class="panel" id="ideaPanel" hidden>
+              <p class="workspace-kicker">MÓDULO 02 / IDEA ENGINE</p><h3>Vamos criar alguma coisa?</h3><p>Selecione um tema e gere um ponto de partida para um projeto.</p>
+              <label for="ideaTheme">ÁREA DE INTERESSE</label><div class="input-row"><select id="ideaTheme"><option value="surpresa">Surpreenda-me</option><option value="ambiente">Meio ambiente</option><option value="educacao">Educação</option><option value="cotidiano">Dia a dia</option></select><button id="generateIdea" type="button" aria-label="Gerar ideia">↗</button></div>
+              <div class="result" id="ideaResult" hidden><span>IDEIA GERADA / <span id="ideaCount">01</span></span><strong id="ideaTitle"></strong><p id="ideaDescription"></p><button class="again" id="againBtn" type="button">GERAR OUTRA ↗</button></div>
+            </div>
+            <div class="panel" id="creativePanel" hidden>
+              <p class="workspace-kicker">MÓDULO 03 / CREATIVE MODE</p><h3 id="creativeTitle">Uma nova perspectiva.</h3><p id="creativeDescription">A atmosfera do laboratório mudou. Explore as cores e experimente voltar quando quiser.</p><button class="again" id="modeToggle" type="button">VOLTAR AO MODO ORIGINAL ↗</button>
+            </div>
+          </div>
+          <div class="workspace-foot"><span>NOVA LAB / INTERACTIVE SYSTEM</span><time id="time" aria-label="Hora local">--:--</time></div>
+        </div>
+      </div>
+    </section>
+    <section class="closing shell" id="sobre" aria-labelledby="closingTitle"><span class="closing-star" aria-hidden="true">✳</span><div><p class="kicker">03 / CONTINUE</p><h2 id="closingTitle">A próxima grande ideia<br>pode ser <em>a sua.</em></h2><p>Experimente sem medo. Pergunte mais. Faça acontecer.</p></div><a href="#inicio" class="back-top" aria-label="Voltar ao início">↑</a></section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner"><strong>NOVA<span>/</span>LAB</strong><span>UM EXPERIMENTO EM CRIATIVIDADE DIGITAL.</span><span>FEITO PARA EXPLORAR · 2026</span></div></footer>
+  <dialog id="terminalDialog" aria-labelledby="terminalTitle"><div class="terminal-window"><div class="terminal-head"><span><i></i><i></i><i></i> NOVA / TERMINAL</span><button id="closeTerminal" type="button" aria-label="Fechar terminal">×</button></div><div class="terminal-body"><p class="workspace-kicker">NOVA LAB — SISTEMA INTERATIVO / V1.0</p><h2 id="terminalTitle">Olá, explorador<span>_</span></h2><p>Digite <b>ajuda</b> para ver os comandos disponíveis.</p><div class="terminal-log" id="terminalLog" aria-live="polite"></div><form id="terminalForm"><label for="terminalInput">COMANDO</label><div class="terminal-input"><span>&gt;</span><input id="terminalInput" type="text" autocomplete="off" spellcheck="false" maxlength="100" placeholder="ajuda, ideia, modo..."><button type="submit" aria-label="Executar comando">↵</button></div></form></div></div></dialog>
+</body>
+</html>
